@@ -3,12 +3,14 @@
 #include <string>
 #include <zlib.h>
 
-void compressFile(const std::string& source, const std::string& dest) {
-    std::ifstream sourceFile(source, std::ios::binary);
-    std::ofstream destFile(dest, std::ios::binary);
+using namespace std;
+
+void compressFile(const string& source, const string& dest) {
+    ifstream sourceFile(source, ios::binary);
+    ofstream destFile(dest, ios::binary);
     
     if (!sourceFile.is_open() || !destFile.is_open()) {
-        std::cerr << "Failed to open files!" << std::endl;
+        cerr << "Failed to open files!" << endl;
         return;
     }
 
@@ -23,7 +25,7 @@ void compressFile(const std::string& source, const std::string& dest) {
     strm.next_in = Z_NULL;
 
     if (deflateInit(&strm, Z_BEST_COMPRESSION) != Z_OK) {
-        std::cerr << "Failed to initialize compression!" << std::endl;
+        cerr << "Failed to initialize compression!" << endl;
         return;
     }
 
