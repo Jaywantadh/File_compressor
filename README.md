@@ -39,12 +39,12 @@ cd build
 
 ```bash
 cmake ..
-
+```
 3. Compile the Project:
 
 ```bash
 make
-
+```
 This will create a shared library (libcompressor.so on Linux or compressor.dll on Windows) in the build directory.
 
 ### Run the Python GUI:
@@ -53,12 +53,12 @@ This will create a shared library (libcompressor.so on Linux or compressor.dll o
 
 ```bash
 cd ..
-
+```
 2. Run the Python script:
 
 ```bash
 python gui.py
-
+```
 ## Usage
 
 1. Click on the "Browse" button to select the file you want to compress.
