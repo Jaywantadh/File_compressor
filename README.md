@@ -27,14 +27,14 @@ This project implements a simple file compressor using a C++ backend for compres
 ```bash
 git clone https://github.com/yourusername/file-compressor.git
 cd file-compressor
-
+```
 ### Step 2: Compile the Backend of C++
 1. Navigate to the build directory and create it if it doesn't exist:
 
 ```bash
 mkdir build
 cd build
-
+```
 2. Run CMake to configure the project:
 
 ```bash
